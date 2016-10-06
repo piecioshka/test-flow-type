@@ -82,10 +82,10 @@
     ```
 
 5. Run commands:
-    
+
     ```bash
-    npm run build   # build ES5 file from ES6+Flow
-    npm run run     # execute ES5 code
+    $ npm run build   # build ES5 file from ES6+Flow
+    $ npm run run     # execute ES5 code
     ```
 
 ## License
