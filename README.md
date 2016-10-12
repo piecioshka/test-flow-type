@@ -1,4 +1,4 @@
-# test-flow-type
+# test-flowtype-webpack
 
 > :ledger: Test project about how to setup FlowType
 
@@ -84,7 +84,7 @@
 5. Run commands:
 
     ```bash
-    $ npm run build   # build ES5 file from ES6+Flow
+    $ npm run build   # build ES5 file from ES6 + FlowType
     $ npm run run     # execute ES5 code
     ```
 
