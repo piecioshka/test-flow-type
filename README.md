@@ -1,6 +1,12 @@
 # boilerplate-webpack-flowtype
 
-> :ledger: Test project about how to setup FlowType
+🍴 Starter with FlowType & Webpack
+
+## Features
+
+* :white_check_mark: Webpack `v4.43.0`
+* :white_check_mark: tcomb `v3.2.29`
+* :white_check_mark: Babel (Core) `v7.10.2`
 
 ## How it's works?
 
@@ -8,64 +14,9 @@
 
 ## How to use `FlowType`?
 
-1. Install dependencies
-
-    ```json
-    {
-        "scripts": {
-            "run": "node bundle.js",
-            "build": "webpack"
-        },
-        "devDependencies": {
-            "babel-core": "^6.14.0",
-            "babel-loader": "^6.2.5",
-            "babel-plugin-syntax-flow": "^6.13.0",
-            "babel-plugin-tcomb": "^0.3.12",
-            "babel-plugin-transform-flow-strip-types": "^6.14.0",
-            "babel-preset-es2015": "^6.14.0",
-            "tcomb": "^3.2.13",
-            "webpack": "^1.13.2"
-        }
-    }
-    ```
-
-2. Define Babel plugins:
-
-    ```json
-    {
-        "presets": [
-            "es2015"
-        ],
-        "plugins": [
-            "syntax-flow",
-            "tcomb",
-            "transform-flow-strip-types"
-        ]
-    }
-    ```
-
-3. Define `webpack` settings
-
-    ```javascript
-    'use strict';
-
-    module.exports = {
-        entry: './index.js',
-        output: {
-            filename: 'bundle.js'
-        },
-        module: {
-            loaders: [
-                {
-                    test: /^(.*)\.js$/,
-                    exclude: /node_modules/,
-                    loader: 'babel-loader'
-                }
-            ]
-        }
-    };
-    ```
-
+1. Install dependencies _(see: package.json)_
+2. Define Babel plugins _(see: .babelrc)_
+3. Define `webpack` settings _(see: webpack.config.js)_
 4. Last, but not least add your code:
 
     ```javascript
@@ -84,8 +35,8 @@
 5. Run commands:
 
     ```bash
-    $ npm run build   # build ES5 file from ES6 + FlowType
-    $ npm run run     # execute ES5 code
+    npm run build   # build ES5 file from ES6 + FlowType
+    npm run start   # execute ES5 code
     ```
 
 ## License
