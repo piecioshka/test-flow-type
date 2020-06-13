@@ -1,6 +1,6 @@
 # boilerplate-webpack-flowtype
 
-🍴 Starter with FlowType & Webpack
+🍴 Starter with Webpack & FlowType
 
 ## Features
 
