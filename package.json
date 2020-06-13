@@ -1,8 +1,9 @@
 {
     "private": true,
+    "name": "boilerplate-webpack-flowtype",
     "scripts": {
-        "clear": "rm -rf node_modules/ npm-debug.log bundle.js",
-        "run": "node bundle.js",
+        "clear": "rm -rf node_modules/ npm-debug.log dist/bundle.js",
+        "start": "node dist/bundle.js",
         "build": "webpack",
         "watch": "webpack -w"
     },

@@ -1,15 +1,15 @@
-# test-flowtype-webpack
+# boilerplate-webpack-flowtype
 
 > :ledger: Test project about how to setup FlowType
 
 ## How it's works?
 
-![](./docs/scheme.png)
+![Scheme](./docs/scheme.png)
 
 ## How to use `FlowType`?
 
 1. Install dependencies
-    
+
     ```json
     {
         "scripts": {
@@ -30,7 +30,7 @@
     ```
 
 2. Define Babel plugins:
-    
+
     ```json
     {
         "presets": [
@@ -45,10 +45,10 @@
     ```
 
 3. Define `webpack` settings
-    
+
     ```javascript
     'use strict';
-    
+
     module.exports = {
         entry: './index.js',
         output: {
@@ -67,16 +67,16 @@
     ```
 
 4. Last, but not least add your code:
-    
+
     ```javascript
     /* @flow */
-    
+
     'use strict';
-    
+
     function Person(name: string) {
         this.name = name;
     }
-    
+
     let p = new Person('asd');
     console.log(p);
     ```
